@@ -1,0 +1,14 @@
+#include<sys/types.h>
+#include<unistd.h>
+#include<stdio.h>
+
+void main(void){
+	pid_t id_proceso;
+	pid_t id_padre;
+
+	id_proceso=getpid();
+	id_padre=getpipd();
+	
+	printf(Identificador de proceso %d\n", id_proceso);
+	printf(Identificador de proceso %d\n", id_padre);
+}
